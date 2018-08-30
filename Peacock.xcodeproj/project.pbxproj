@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D404E23E2137B2FE009016E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404E23D2137B2FE009016E6 /* AppDelegate.swift */; };
+		D404E2402137B2FE009016E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404E23F2137B2FE009016E6 /* ViewController.swift */; };
+		D404E2432137B2FE009016E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D404E2412137B2FE009016E6 /* Main.storyboard */; };
+		D404E2462137B2FE009016E6 /* Peacock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D404E2442137B2FE009016E6 /* Peacock.xcdatamodeld */; };
+		D404E2482137B2FF009016E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D404E2472137B2FF009016E6 /* Assets.xcassets */; };
+		D404E24B2137B2FF009016E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D404E2492137B2FF009016E6 /* LaunchScreen.storyboard */; };
+		D404E2562137B2FF009016E6 /* PeacockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404E2552137B2FF009016E6 /* PeacockTests.swift */; };
+		D404E2612137B2FF009016E6 /* PeacockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404E2602137B2FF009016E6 /* PeacockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D404E2522137B2FF009016E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D404E2322137B2FE009016E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D404E2392137B2FE009016E6;
+			remoteInfo = Peacock;
+		};
+		D404E25D2137B2FF009016E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D404E2322137B2FE009016E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D404E2392137B2FE009016E6;
+			remoteInfo = Peacock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D404E23A2137B2FE009016E6 /* Peacock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peacock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D404E23D2137B2FE009016E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D404E23F2137B2FE009016E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D404E2422137B2FE009016E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D404E2452137B2FE009016E6 /* Peacock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Peacock.xcdatamodel; sourceTree = "<group>"; };
+		D404E2472137B2FF009016E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D404E24A2137B2FF009016E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D404E24C2137B2FF009016E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D404E2512137B2FF009016E6 /* PeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D404E2552137B2FF009016E6 /* PeacockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeacockTests.swift; sourceTree = "<group>"; };
+		D404E2572137B2FF009016E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D404E25C2137B2FF009016E6 /* PeacockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D404E2602137B2FF009016E6 /* PeacockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeacockUITests.swift; sourceTree = "<group>"; };
+		D404E2622137B2FF009016E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D404E2372137B2FE009016E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404E24E2137B2FF009016E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404E2592137B2FF009016E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D404E2312137B2FE009016E6 = {
+			isa = PBXGroup;
+			children = (
+				D404E23C2137B2FE009016E6 /* Peacock */,
+				D404E2542137B2FF009016E6 /* PeacockTests */,
+				D404E25F2137B2FF009016E6 /* PeacockUITests */,
+				D404E23B2137B2FE009016E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D404E23B2137B2FE009016E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D404E23A2137B2FE009016E6 /* Peacock.app */,
+				D404E2512137B2FF009016E6 /* PeacockTests.xctest */,
+				D404E25C2137B2FF009016E6 /* PeacockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D404E23C2137B2FE009016E6 /* Peacock */ = {
+			isa = PBXGroup;
+			children = (
+				D404E23D2137B2FE009016E6 /* AppDelegate.swift */,
+				D404E23F2137B2FE009016E6 /* ViewController.swift */,
+				D404E2412137B2FE009016E6 /* Main.storyboard */,
+				D404E2472137B2FF009016E6 /* Assets.xcassets */,
+				D404E2492137B2FF009016E6 /* LaunchScreen.storyboard */,
+				D404E24C2137B2FF009016E6 /* Info.plist */,
+				D404E2442137B2FE009016E6 /* Peacock.xcdatamodeld */,
+			);
+			path = Peacock;
+			sourceTree = "<group>";
+		};
+		D404E2542137B2FF009016E6 /* PeacockTests */ = {
+			isa = PBXGroup;
+			children = (
+				D404E2552137B2FF009016E6 /* PeacockTests.swift */,
+				D404E2572137B2FF009016E6 /* Info.plist */,
+			);
+			path = PeacockTests;
+			sourceTree = "<group>";
+		};
+		D404E25F2137B2FF009016E6 /* PeacockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D404E2602137B2FF009016E6 /* PeacockUITests.swift */,
+				D404E2622137B2FF009016E6 /* Info.plist */,
+			);
+			path = PeacockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D404E2392137B2FE009016E6 /* Peacock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D404E2652137B2FF009016E6 /* Build configuration list for PBXNativeTarget "Peacock" */;
+			buildPhases = (
+				D404E2362137B2FE009016E6 /* Sources */,
+				D404E2372137B2FE009016E6 /* Frameworks */,
+				D404E2382137B2FE009016E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Peacock;
+			productName = Peacock;
+			productReference = D404E23A2137B2FE009016E6 /* Peacock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D404E2502137B2FF009016E6 /* PeacockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D404E2682137B2FF009016E6 /* Build configuration list for PBXNativeTarget "PeacockTests" */;
+			buildPhases = (
+				D404E24D2137B2FF009016E6 /* Sources */,
+				D404E24E2137B2FF009016E6 /* Frameworks */,
+				D404E24F2137B2FF009016E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D404E2532137B2FF009016E6 /* PBXTargetDependency */,
+			);
+			name = PeacockTests;
+			productName = PeacockTests;
+			productReference = D404E2512137B2FF009016E6 /* PeacockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D404E25B2137B2FF009016E6 /* PeacockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D404E26B2137B2FF009016E6 /* Build configuration list for PBXNativeTarget "PeacockUITests" */;
+			buildPhases = (
+				D404E2582137B2FF009016E6 /* Sources */,
+				D404E2592137B2FF009016E6 /* Frameworks */,
+				D404E25A2137B2FF009016E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D404E25E2137B2FF009016E6 /* PBXTargetDependency */,
+			);
+			name = PeacockUITests;
+			productName = PeacockUITests;
+			productReference = D404E25C2137B2FF009016E6 /* PeacockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D404E2322137B2FE009016E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Mathivathani Murugesan";
+				TargetAttributes = {
+					D404E2392137B2FE009016E6 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					D404E2502137B2FF009016E6 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D404E2392137B2FE009016E6;
+					};
+					D404E25B2137B2FF009016E6 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D404E2392137B2FE009016E6;
+					};
+				};
+			};
+			buildConfigurationList = D404E2352137B2FE009016E6 /* Build configuration list for PBXProject "Peacock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D404E2312137B2FE009016E6;
+			productRefGroup = D404E23B2137B2FE009016E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D404E2392137B2FE009016E6 /* Peacock */,
+				D404E2502137B2FF009016E6 /* PeacockTests */,
+				D404E25B2137B2FF009016E6 /* PeacockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D404E2382137B2FE009016E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404E24B2137B2FF009016E6 /* LaunchScreen.storyboard in Resources */,
+				D404E2482137B2FF009016E6 /* Assets.xcassets in Resources */,
+				D404E2432137B2FE009016E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404E24F2137B2FF009016E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404E25A2137B2FF009016E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D404E2362137B2FE009016E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404E2402137B2FE009016E6 /* ViewController.swift in Sources */,
+				D404E2462137B2FE009016E6 /* Peacock.xcdatamodeld in Sources */,
+				D404E23E2137B2FE009016E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404E24D2137B2FF009016E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404E2562137B2FF009016E6 /* PeacockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404E2582137B2FF009016E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404E2612137B2FF009016E6 /* PeacockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D404E2532137B2FF009016E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D404E2392137B2FE009016E6 /* Peacock */;
+			targetProxy = D404E2522137B2FF009016E6 /* PBXContainerItemProxy */;
+		};
+		D404E25E2137B2FF009016E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D404E2392137B2FE009016E6 /* Peacock */;
+			targetProxy = D404E25D2137B2FF009016E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D404E2412137B2FE009016E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D404E2422137B2FE009016E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D404E2492137B2FF009016E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D404E24A2137B2FF009016E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D404E2632137B2FF009016E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D404E2642137B2FF009016E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D404E2662137B2FF009016E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KKW946D6;
+				INFOPLIST_FILE = Peacock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Torus-tech-co.Peacock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D404E2672137B2FF009016E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KKW946D6;
+				INFOPLIST_FILE = Peacock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Torus-tech-co.Peacock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D404E2692137B2FF009016E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KKW946D6;
+				INFOPLIST_FILE = PeacockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Torus-tech-co.PeacockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peacock.app/Peacock";
+			};
+			name = Debug;
+		};
+		D404E26A2137B2FF009016E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KKW946D6;
+				INFOPLIST_FILE = PeacockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Torus-tech-co.PeacockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peacock.app/Peacock";
+			};
+			name = Release;
+		};
+		D404E26C2137B2FF009016E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KKW946D6;
+				INFOPLIST_FILE = PeacockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Torus-tech-co.PeacockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Peacock;
+			};
+			name = Debug;
+		};
+		D404E26D2137B2FF009016E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KKW946D6;
+				INFOPLIST_FILE = PeacockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Torus-tech-co.PeacockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Peacock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D404E2352137B2FE009016E6 /* Build configuration list for PBXProject "Peacock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404E2632137B2FF009016E6 /* Debug */,
+				D404E2642137B2FF009016E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D404E2652137B2FF009016E6 /* Build configuration list for PBXNativeTarget "Peacock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404E2662137B2FF009016E6 /* Debug */,
+				D404E2672137B2FF009016E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D404E2682137B2FF009016E6 /* Build configuration list for PBXNativeTarget "PeacockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404E2692137B2FF009016E6 /* Debug */,
+				D404E26A2137B2FF009016E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D404E26B2137B2FF009016E6 /* Build configuration list for PBXNativeTarget "PeacockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404E26C2137B2FF009016E6 /* Debug */,
+				D404E26D2137B2FF009016E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D404E2442137B2FE009016E6 /* Peacock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D404E2452137B2FE009016E6 /* Peacock.xcdatamodel */,
+			);
+			currentVersion = D404E2452137B2FE009016E6 /* Peacock.xcdatamodel */;
+			path = Peacock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D404E2322137B2FE009016E6 /* Project object */;
+}
