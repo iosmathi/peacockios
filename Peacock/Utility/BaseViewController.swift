@@ -49,14 +49,31 @@ class BaseViewController: UIViewController {
         return gradientLayer
     }
     
-    func applyGradientDynamic(frame: CGRect, color1 : CGColor, color2 :CGColor, color3:CGColor, color4: CGColor, start_point: CGPoint, end_point: CGPoint) ->  CAGradientLayer {
+    func applyGradientDynamic(frame: CGRect, color1 : CGColor, color2 :CGColor, start_point: CGPoint, end_point: CGPoint, cornerRadius: CGFloat) ->  CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = frame
-        gradientLayer.colors = [color1,color2, color3, color4]
+        gradientLayer.colors = [color1,color2]//, color3, color4]
         gradientLayer.startPoint = start_point//CGPoint(x: 1.00, y: 0.00)
         gradientLayer.endPoint = end_point //CGPoint(x: 1.00, y: 1.00)
-        gradientLayer.locations = [0.0, 0.25, 0.75, 1.0]
+        gradientLayer.locations = [0.0,0.90,0.95,1.0]// [0.0, 0.25, 0.75, 1.0]
+        gradientLayer.cornerRadius = cornerRadius
         return gradientLayer
+    }
+    //MARK: Shadow to view
+    func setShadowToView(myView: UIView) {
+        var shadowPath: UIBezierPath = UIBezierPath()
+        shadowPath = UIBezierPath(roundedRect: myView.layer.bounds, cornerRadius: myView.layer.cornerRadius)
+        //UIBezierPath(rect: CGRect(x: -shadowSize / 2,y: 0,width:viewBothWidth.constant ,height: myView.frame.size.height + shadowSize ))
+        myView.layer.masksToBounds = false
+        myView.layer.borderColor =  UIColor(red:0.67, green:0.67, blue:0.67, alpha:0.40).cgColor
+        myView.layer.borderWidth = 1
+        myView.layer.cornerRadius = 7
+        myView.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.12).cgColor
+        myView.layer.shadowOffset =  CGSize(width: 0, height: 10)
+        myView.layer.shadowOpacity = 1
+        myView.layer.shadowPath = shadowPath.cgPath
+        myView.layer.shadowRadius = 10
+        myView.backgroundColor = .white
     }
     //MARK: Navigation Button add
     //Back Button Style Navigation

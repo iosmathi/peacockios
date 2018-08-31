@@ -91,3 +91,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//Inspectable Element settings
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat
+        {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+            
+        }
+    }
+    @IBInspectable var cornerWidth: CGFloat
+        {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    @IBInspectable var borderColor: UIColor
+        {
+        set{ self.layer.borderColor = newValue.cgColor }
+        get{ return UIColor(cgColor: self.layer.borderColor!) }
+    }
+}
+//TextviewPlaceholder
+extension UITextField{
+    @IBInspectable var placeHolderColor: UIColor? {
+        get {
+            return self.placeHolderColor
+        }
+        set {
+            self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedStringKey.foregroundColor: newValue!])
+        }
+    }
+}

@@ -23,21 +23,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJe-I6-RFF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="fJe-I6-RFF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ta0-iW-yg9">
                                 <rect key="frame" x="29" y="203" width="317" height="246"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1eD-Qg-IBg">
-                                        <rect key="frame" x="83" y="8" width="150" height="150"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="1eD-Qg-IBg">
+                                        <rect key="frame" x="109" y="28" width="98" height="116"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="SC2-5A-qRJ"/>
-                                            <constraint firstAttribute="width" constant="150" id="vAu-wh-ZQE"/>
+                                            <constraint firstAttribute="height" constant="116" id="SC2-5A-qRJ"/>
+                                            <constraint firstAttribute="width" constant="98" id="vAu-wh-ZQE"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PEACOCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIV-4o-aDr">
-                                        <rect key="frame" x="111.5" y="166" width="93" height="32"/>
+                                        <rect key="frame" x="111.5" y="152" width="93" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="ssh-6W-LDO"/>
                                         </constraints>
@@ -46,7 +46,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real time dating everywhere you go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-lK-lZk">
-                                        <rect key="frame" x="45.5" y="206" width="226" height="20"/>
+                                        <rect key="frame" x="45.5" y="192" width="226" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="pkQ-j0-upJ"/>
                                         </constraints>
@@ -63,7 +63,7 @@
                                     <constraint firstAttribute="width" constant="317" id="Qmj-MM-hOz"/>
                                     <constraint firstAttribute="height" constant="246" id="VcV-N9-fMX"/>
                                     <constraint firstItem="NM7-lK-lZk" firstAttribute="centerX" secondItem="ta0-iW-yg9" secondAttribute="centerX" id="d2w-vL-dsI"/>
-                                    <constraint firstItem="1eD-Qg-IBg" firstAttribute="top" secondItem="ta0-iW-yg9" secondAttribute="top" constant="8" id="kkz-8Q-4rw"/>
+                                    <constraint firstItem="1eD-Qg-IBg" firstAttribute="top" secondItem="ta0-iW-yg9" secondAttribute="top" constant="28" id="kkz-8Q-4rw"/>
                                     <constraint firstItem="NM7-lK-lZk" firstAttribute="top" secondItem="AIV-4o-aDr" secondAttribute="bottom" constant="8" id="wVC-yV-wq7"/>
                                 </constraints>
                             </view>
@@ -85,4 +85,8 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash" width="414" height="736"/>
+        <image name="splash_logo" width="91" height="91"/>
+    </resources>
 </document>
