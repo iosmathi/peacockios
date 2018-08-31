@@ -9,44 +9,90 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeutraText-BookAlt.ttf">
+            <string>NeutraText-BookAlt</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Page Content View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Peacock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageContentViewController" id="BYZ-38-t0r" customClass="PageContentViewController" customModule="Peacock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-YB-mm3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w1" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-YB-mm3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDS-VI-SDM">
-                                <rect key="frame" x="67" y="155" width="240" height="257"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDS-VI-SDM">
+                                <rect key="frame" x="87" y="193" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Dgm-3G-fju"/>
+                                    <constraint firstAttribute="width" constant="200" id="tmZ-gT-kat"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfa-e8-IV8">
+                                <rect key="frame" x="31" y="476" width="314" height="20"/>
+                                <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyF-C5-6OM">
+                                <rect key="frame" x="298" y="40" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I0I-1e-8kk"/>
+                                    <constraint firstAttribute="width" constant="61" id="gqe-lk-Vj4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jDS-VI-SDM" firstAttribute="top" secondItem="AyF-C5-6OM" secondAttribute="bottom" constant="123" id="0so-Ni-vMS"/>
+                            <constraint firstItem="sfa-e8-IV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="3ap-G9-UEt"/>
+                            <constraint firstItem="sfa-e8-IV8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4U5-9s-pfN"/>
                             <constraint firstItem="Ony-YB-mm3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="En5-PX-CAq"/>
                             <constraint firstItem="Ony-YB-mm3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Rhs-Cv-atf"/>
                             <constraint firstItem="Ony-YB-mm3" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="aPI-Iz-lcA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sfa-e8-IV8" secondAttribute="trailing" constant="30" id="anP-Bp-1t8"/>
                             <constraint firstItem="Ony-YB-mm3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iMc-dY-93Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AyF-C5-6OM" secondAttribute="trailing" constant="16" id="jF0-VC-YZL"/>
+                            <constraint firstItem="sfa-e8-IV8" firstAttribute="top" secondItem="jDS-VI-SDM" secondAttribute="bottom" constant="83" id="mjL-yi-dYr"/>
+                            <constraint firstItem="jDS-VI-SDM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="rBX-F0-nrB"/>
+                            <constraint firstItem="AyF-C5-6OM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="t6y-5s-VCc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imgBackground" destination="Ony-YB-mm3" id="xTv-ie-2Hm"/>
+                        <outlet property="imgCenter" destination="jDS-VI-SDM" id="tr2-ON-SxU"/>
+                        <outlet property="imgHeight" destination="Dgm-3G-fju" id="KPP-Qg-Mf8"/>
+                        <outlet property="imgTop" destination="0so-Ni-vMS" id="Jgo-Y9-9iv"/>
+                        <outlet property="imgWidth" destination="tmZ-gT-kat" id="4fV-1a-hgN"/>
+                        <outlet property="lblContent" destination="sfa-e8-IV8" id="mOV-i4-eqp"/>
+                        <outlet property="lblContentTop" destination="mjL-yi-dYr" id="9ir-Zy-MdE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="192.80000000000001" y="40.929535232383813"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Page View View Controller-->
         <scene sceneID="DBg-VQ-Ka1">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="DGM-T1-zQ4" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="DGM-T1-zQ4" customClass="PageViewViewController" customModule="Peacock" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="795-ZF-IMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-492" y="41"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="w1" width="414" height="736"/>
+    </resources>
 </document>

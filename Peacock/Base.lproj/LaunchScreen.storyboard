@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeutraText-BookAlt.ttf">
+            <string>NeutraText-BookAlt</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -13,13 +22,67 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJe-I6-RFF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ta0-iW-yg9">
+                                <rect key="frame" x="29" y="203" width="317" height="246"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1eD-Qg-IBg">
+                                        <rect key="frame" x="83" y="8" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="SC2-5A-qRJ"/>
+                                            <constraint firstAttribute="width" constant="150" id="vAu-wh-ZQE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PEACOCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIV-4o-aDr">
+                                        <rect key="frame" x="111.5" y="166" width="93" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="ssh-6W-LDO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="20"/>
+                                        <color key="textColor" red="0.17254901960784313" green="0.34901960784313724" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real time dating everywhere you go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-lK-lZk">
+                                        <rect key="frame" x="45.5" y="206" width="226" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="pkQ-j0-upJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="15"/>
+                                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1eD-Qg-IBg" firstAttribute="centerX" secondItem="ta0-iW-yg9" secondAttribute="centerX" id="27U-QL-o3h"/>
+                                    <constraint firstItem="AIV-4o-aDr" firstAttribute="top" secondItem="1eD-Qg-IBg" secondAttribute="bottom" constant="8" id="HK4-fJ-b5P"/>
+                                    <constraint firstItem="AIV-4o-aDr" firstAttribute="centerX" secondItem="ta0-iW-yg9" secondAttribute="centerX" id="N6S-uN-PKA"/>
+                                    <constraint firstAttribute="width" constant="317" id="Qmj-MM-hOz"/>
+                                    <constraint firstAttribute="height" constant="246" id="VcV-N9-fMX"/>
+                                    <constraint firstItem="NM7-lK-lZk" firstAttribute="centerX" secondItem="ta0-iW-yg9" secondAttribute="centerX" id="d2w-vL-dsI"/>
+                                    <constraint firstItem="1eD-Qg-IBg" firstAttribute="top" secondItem="ta0-iW-yg9" secondAttribute="top" constant="8" id="kkz-8Q-4rw"/>
+                                    <constraint firstItem="NM7-lK-lZk" firstAttribute="top" secondItem="AIV-4o-aDr" secondAttribute="bottom" constant="8" id="wVC-yV-wq7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fJe-I6-RFF" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="9t4-DK-jF8"/>
+                            <constraint firstItem="ta0-iW-yg9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tfc-MW-ypn"/>
+                            <constraint firstItem="fJe-I6-RFF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fZ8-C7-8Mc"/>
+                            <constraint firstItem="ta0-iW-yg9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-7.5" id="hfM-QT-0d8"/>
+                            <constraint firstItem="fJe-I6-RFF" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="jFi-zc-bQo"/>
+                            <constraint firstItem="fJe-I6-RFF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="khd-7m-CEl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
 </document>

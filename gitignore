@@ -43,6 +43,7 @@ User Interface State/
 *.moved-aside
 *.xcuserstate
 *.DS_Store
+.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
