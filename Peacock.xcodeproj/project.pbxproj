@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D402A8B2213D1F8D00BD6C38 /* PagingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D402A8B1213D1F8D00BD6C38 /* PagingCollectionViewCell.swift */; };
 		D404E23E2137B2FE009016E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404E23D2137B2FE009016E6 /* AppDelegate.swift */; };
 		D404E2402137B2FE009016E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404E23F2137B2FE009016E6 /* ViewController.swift */; };
 		D404E2432137B2FE009016E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D404E2412137B2FE009016E6 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		D404E29A2137FC27009016E6 /* Neutra Text TF SC Alt Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D404E28C2137FC27009016E6 /* Neutra Text TF SC Alt Bold.ttf */; };
 		D404E29B2137FC27009016E6 /* Neutra Text TF Alt Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D404E28D2137FC27009016E6 /* Neutra Text TF Alt Bold.ttf */; };
 		D404E29C2137FC27009016E6 /* Neutra Text TF SC Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D404E28E2137FC27009016E6 /* Neutra Text TF SC Bold.ttf */; };
+		D41FBB47213D4CB400AEA38E /* ExpandLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41FBB46213D4CB400AEA38E /* ExpandLoginViewController.swift */; };
 		D4299233213819B9001C92E6 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4299232213819B9001C92E6 /* ExtensionViewController.swift */; };
 		D47479BE2139525F00EF8B45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47479BD2139525F00EF8B45 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D402A8B1213D1F8D00BD6C38 /* PagingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewCell.swift; sourceTree = "<group>"; };
 		D404E23A2137B2FE009016E6 /* Peacock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peacock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D404E23D2137B2FE009016E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D404E23F2137B2FE009016E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		D404E28C2137FC27009016E6 /* Neutra Text TF SC Alt Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neutra Text TF SC Alt Bold.ttf"; sourceTree = "<group>"; };
 		D404E28D2137FC27009016E6 /* Neutra Text TF Alt Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neutra Text TF Alt Bold.ttf"; sourceTree = "<group>"; };
 		D404E28E2137FC27009016E6 /* Neutra Text TF SC Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neutra Text TF SC Bold.ttf"; sourceTree = "<group>"; };
+		D41FBB46213D4CB400AEA38E /* ExpandLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandLoginViewController.swift; sourceTree = "<group>"; };
 		D4299232213819B9001C92E6 /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		D47479BD2139525F00EF8B45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				D47479BD2139525F00EF8B45 /* LoginViewController.swift */,
+				D41FBB46213D4CB400AEA38E /* ExpandLoginViewController.swift */,
+				D402A8B1213D1F8D00BD6C38 /* PagingCollectionViewCell.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -375,12 +381,14 @@
 			files = (
 				D47479BE2139525F00EF8B45 /* LoginViewController.swift in Sources */,
 				D404E27E2137EC21009016E6 /* Constant.swift in Sources */,
+				D41FBB47213D4CB400AEA38E /* ExpandLoginViewController.swift in Sources */,
 				D404E27B2137CCD7009016E6 /* PageViewViewController.swift in Sources */,
 				D404E2402137B2FE009016E6 /* ViewController.swift in Sources */,
 				D404E27A2137CCD7009016E6 /* PageContentViewController.swift in Sources */,
 				D4299233213819B9001C92E6 /* ExtensionViewController.swift in Sources */,
 				D404E2462137B2FE009016E6 /* Peacock.xcdatamodeld in Sources */,
 				D404E23E2137B2FE009016E6 /* AppDelegate.swift in Sources */,
+				D402A8B2213D1F8D00BD6C38 /* PagingCollectionViewCell.swift in Sources */,
 				D404E27C2137CCD7009016E6 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67KKW946D6;
 				INFOPLIST_FILE = Peacock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,6 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67KKW946D6;
 				INFOPLIST_FILE = Peacock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -96,9 +96,6 @@ class PageViewViewController: UIPageViewController, UIPageViewControllerDataSour
         appearance.pageIndicatorTintColor = UIColor(red:0.85, green:0.85, blue:0.85, alpha:1.0)
         appearance.currentPageIndicatorTintColor = MYCOLOR.BASE_RED
         appearance.backgroundColor = UIColor.white
-        let btnPrev = UIButton()
-        btnPrev.backgroundColor = UIColor.red
-        appearance.addSubview(btnPrev)
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {

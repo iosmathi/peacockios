@@ -49,10 +49,11 @@ class BaseViewController: UIViewController {
         return gradientLayer
     }
     
-    func applyGradientDynamic(frame: CGRect, color1 : CGColor, color2 :CGColor, start_point: CGPoint, end_point: CGPoint, cornerRadius: CGFloat) ->  CAGradientLayer {
+    func applyGradientDynamic(frame: CGRect, color1 : CGColor, color2 :CGColor, start_point: CGPoint, end_point: CGPoint, cornerRadius: CGFloat, name: String) ->  CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = frame
         gradientLayer.colors = [color1,color2]//, color3, color4]
+        gradientLayer.name = name
         gradientLayer.startPoint = start_point//CGPoint(x: 1.00, y: 0.00)
         gradientLayer.endPoint = end_point //CGPoint(x: 1.00, y: 1.00)
         gradientLayer.locations = [0.0,0.90,0.95,1.0]// [0.0, 0.25, 0.75, 1.0]
