@@ -195,10 +195,9 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-l8-uGQ">
                                                         <rect key="frame" x="260" y="0.0" width="31" height="26"/>
-                                                        <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="26" id="0VY-zf-d3c"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="ln3-Hq-Z6S">
+                                                            <constraint firstAttribute="width" constant="31" id="ln3-Hq-Z6S">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                                             </constraint>
                                                         </constraints>
@@ -207,7 +206,7 @@
                                                             <action selector="didTapFacebookDetailsAction:" destination="QlB-dn-0xz" eventType="touchUpInside" id="fEi-Sq-hxO"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We dont post anything on Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-oC-0Pq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We dont post anything on Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-oC-0Pq">
                                                         <rect key="frame" x="0.0" y="0.0" width="258" height="26"/>
                                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
                                                         <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -227,7 +226,6 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="2sh-oC-0Pq" secondAttribute="bottom" id="2Kj-sH-Wx0"/>
                                                     <constraint firstAttribute="bottom" secondItem="IRc-e7-3g7" secondAttribute="bottom" id="8VM-29-TfW"/>
@@ -239,7 +237,9 @@
                                                     <constraint firstItem="gmd-l8-uGQ" firstAttribute="top" secondItem="bcm-Zj-V54" secondAttribute="top" id="QRT-Pq-kgh"/>
                                                     <constraint firstItem="2sh-oC-0Pq" firstAttribute="leading" secondItem="bcm-Zj-V54" secondAttribute="leading" id="Qvy-Ed-4fa"/>
                                                     <constraint firstAttribute="height" constant="26" id="Sur-r2-eeX"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="295" id="j6M-QQ-DBe"/>
+                                                    <constraint firstAttribute="width" constant="295" id="j6M-QQ-DBe">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                                    </constraint>
                                                     <constraint firstItem="IRc-e7-3g7" firstAttribute="leading" secondItem="bcm-Zj-V54" secondAttribute="leading" id="mjs-Wj-cL3"/>
                                                     <constraint firstAttribute="trailing" secondItem="gmd-l8-uGQ" secondAttribute="trailing" constant="4" id="yqr-xg-nNA"/>
                                                 </constraints>
@@ -385,6 +385,7 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By 'Login', you agree to our Terms and Services &amp; Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-FS-wIa">
                                         <rect key="frame" x="51" y="210" width="273" height="29"/>
@@ -435,12 +436,14 @@
                         <viewLayoutGuide key="safeArea" id="Hfj-zR-Qp3"/>
                     </view>
                     <connections>
+                        <outlet property="btnDownArrowWidth" destination="ln3-Hq-Z6S" id="zjA-an-e4I"/>
                         <outlet property="btnFacebookDetails" destination="IRc-e7-3g7" id="AMu-Vt-LIn"/>
                         <outlet property="btnLoginFacebook" destination="9qu-ao-g5L" id="vF0-s9-FD4"/>
                         <outlet property="btnLoginPhoneNum" destination="SU0-bD-6wn" id="TSp-JM-9GF"/>
                         <outlet property="btnLoginWithEmail" destination="twz-rj-4rr" id="Wdo-Kf-V4C"/>
                         <outlet property="dummyView" destination="gAy-QP-8MB" id="1s4-4X-fPd"/>
                         <outlet property="dummyViewTop" destination="zga-Vh-OkP" id="Dlk-ev-aai"/>
+                        <outlet property="lblFacebookDetails" destination="2sh-oC-0Pq" id="DV3-bj-clj"/>
                         <outlet property="lblTermsText" destination="cAQ-FS-wIa" id="Jr4-XZ-6gu"/>
                         <outlet property="lblTermsTextTop" destination="Jk0-ny-Zy7" id="VRI-gh-kJY"/>
                         <outlet property="pagingCollectionView" destination="UFI-ap-fcN" id="M1d-qL-29A"/>
@@ -603,12 +606,16 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By 'Login', you agree to our Terms and Services &amp; Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-u2-rel">
-                                        <rect key="frame" x="51" y="264" width="273" height="29"/>
+                                        <rect key="frame" x="51" y="281" width="273" height="29"/>
                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="16"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-ht-j0g">
                                         <rect key="frame" x="0.0" y="8" width="375" height="61"/>
@@ -628,28 +635,34 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="LS7-AP-XkX" firstAttribute="centerX" secondItem="IRa-ht-j0g" secondAttribute="centerX" id="Iha-aF-jkK"/>
-                                            <constraint firstAttribute="height" constant="61" id="KWa-UX-8Hg"/>
+                                            <constraint firstAttribute="height" constant="61" id="KWa-UX-8Hg">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                            </constraint>
                                             <constraint firstAttribute="bottom" secondItem="LS7-AP-XkX" secondAttribute="bottom" constant="8" id="NIk-Xi-R5o"/>
                                             <constraint firstItem="LS7-AP-XkX" firstAttribute="top" secondItem="IRa-ht-j0g" secondAttribute="top" constant="8" id="mHx-DG-bT6"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFC-1M-uBj">
-                                        <rect key="frame" x="39" y="332" width="302" height="35"/>
+                                        <rect key="frame" x="39" y="318" width="302" height="49"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="HFC-1M-uBj" secondAttribute="bottom" id="2dO-uO-g2g"/>
-                                    <constraint firstItem="IRa-ht-j0g" firstAttribute="top" secondItem="YgL-Zl-wQR" secondAttribute="top" constant="8" id="6aa-JG-CXn"/>
+                                    <constraint firstItem="IRa-ht-j0g" firstAttribute="top" secondItem="YgL-Zl-wQR" secondAttribute="top" constant="8" id="6aa-JG-CXn">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
                                     <constraint firstItem="BZ8-ln-8I8" firstAttribute="centerX" secondItem="YgL-Zl-wQR" secondAttribute="centerX" id="BNm-pY-lgJ"/>
                                     <constraint firstAttribute="trailing" secondItem="HFC-1M-uBj" secondAttribute="trailing" constant="34" id="C0C-UG-OVf"/>
-                                    <constraint firstItem="Nka-u2-rel" firstAttribute="top" secondItem="BZ8-ln-8I8" secondAttribute="bottom" constant="9" id="DMR-5c-qe2"/>
-                                    <constraint firstItem="HFC-1M-uBj" firstAttribute="top" secondItem="Nka-u2-rel" secondAttribute="bottom" constant="39" id="QjR-Yr-wC3"/>
+                                    <constraint firstItem="Nka-u2-rel" firstAttribute="top" secondItem="BZ8-ln-8I8" secondAttribute="bottom" constant="26" id="DMR-5c-qe2"/>
+                                    <constraint firstItem="HFC-1M-uBj" firstAttribute="top" secondItem="Nka-u2-rel" secondAttribute="bottom" constant="8" id="QjR-Yr-wC3"/>
                                     <constraint firstItem="IRa-ht-j0g" firstAttribute="centerX" secondItem="YgL-Zl-wQR" secondAttribute="centerX" id="W5j-Fi-arV"/>
                                     <constraint firstItem="Nka-u2-rel" firstAttribute="leading" secondItem="YgL-Zl-wQR" secondAttribute="leading" constant="51" id="a2a-bd-3zu"/>
                                     <constraint firstAttribute="trailing" secondItem="IRa-ht-j0g" secondAttribute="trailing" id="abv-h9-eDb"/>
-                                    <constraint firstItem="BZ8-ln-8I8" firstAttribute="top" secondItem="IRa-ht-j0g" secondAttribute="bottom" id="dGg-yD-rtc"/>
+                                    <constraint firstItem="BZ8-ln-8I8" firstAttribute="top" secondItem="IRa-ht-j0g" secondAttribute="bottom" id="dGg-yD-rtc">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
                                     <constraint firstItem="HFC-1M-uBj" firstAttribute="leading" secondItem="YgL-Zl-wQR" secondAttribute="leading" constant="39" id="xSt-bF-Adn"/>
                                     <constraint firstItem="IRa-ht-j0g" firstAttribute="leading" secondItem="YgL-Zl-wQR" secondAttribute="leading" id="xxM-Y8-Ucf"/>
                                     <constraint firstAttribute="trailing" secondItem="Nka-u2-rel" secondAttribute="trailing" constant="51" id="yXJ-P4-8ZK"/>
@@ -673,6 +686,9 @@
                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="25"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We don't post anything on Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsx-4W-pqh">
                                         <rect key="frame" x="72.5" y="84" width="230" height="25"/>
@@ -682,16 +698,24 @@
                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="15"/>
                                         <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other users cannot contact you unless you have already accepted interest from them." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGd-N9-Kuy">
                                         <rect key="frame" x="33" y="135" width="309" height="27"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="309" id="GU9-7F-uSw"/>
+                                            <constraint firstAttribute="width" constant="309" id="GU9-7F-uSw">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                            </constraint>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="i0w-Hh-C2v"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="15"/>
                                         <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="20"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -699,20 +723,21 @@
                                     <constraint firstItem="4nZ-wQ-ugd" firstAttribute="centerX" secondItem="Ws9-Vs-pWt" secondAttribute="centerX" id="704-NG-Sx2"/>
                                     <constraint firstAttribute="trailing" secondItem="4nZ-wQ-ugd" secondAttribute="trailing" constant="33" id="Ie3-j0-FR8"/>
                                     <constraint firstItem="qsx-dG-OZ3" firstAttribute="centerX" secondItem="Ws9-Vs-pWt" secondAttribute="centerX" id="N4d-SO-R33"/>
-                                    <constraint firstItem="KGd-N9-Kuy" firstAttribute="top" secondItem="Lsx-4W-pqh" secondAttribute="bottom" constant="26" id="QD3-80-szY"/>
-                                    <constraint firstAttribute="height" constant="280" id="YN8-sy-TgC"/>
+                                    <constraint firstItem="KGd-N9-Kuy" firstAttribute="top" secondItem="Lsx-4W-pqh" secondAttribute="bottom" constant="26" id="QD3-80-szY">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="280" id="YN8-sy-TgC">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="450"/>
+                                    </constraint>
                                     <constraint firstItem="qsx-dG-OZ3" firstAttribute="top" secondItem="4nZ-wQ-ugd" secondAttribute="bottom" constant="28" id="bfO-Lc-B7c"/>
                                     <constraint firstItem="4nZ-wQ-ugd" firstAttribute="leading" secondItem="Ws9-Vs-pWt" secondAttribute="leading" constant="33" id="fHK-hG-hRW"/>
                                     <constraint firstItem="4nZ-wQ-ugd" firstAttribute="top" secondItem="Ws9-Vs-pWt" secondAttribute="top" id="s0o-ZS-0sZ"/>
-                                    <constraint firstItem="Lsx-4W-pqh" firstAttribute="top" secondItem="qsx-dG-OZ3" secondAttribute="bottom" constant="29" id="uhG-br-pk3"/>
+                                    <constraint firstItem="Lsx-4W-pqh" firstAttribute="top" secondItem="qsx-dG-OZ3" secondAttribute="bottom" constant="29" id="uhG-br-pk3">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
                                     <constraint firstItem="Lsx-4W-pqh" firstAttribute="centerX" secondItem="Ws9-Vs-pWt" secondAttribute="centerX" id="upT-nM-hwL"/>
                                     <constraint firstItem="KGd-N9-Kuy" firstAttribute="centerX" secondItem="Ws9-Vs-pWt" secondAttribute="centerX" id="z5W-EG-yr8"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7M-AV-yAv">
-                                <rect key="frame" x="16" y="368" width="343" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -733,6 +758,7 @@
                         <outlet property="btnLoginFacebook" destination="6Bo-Ao-UdN" id="7H2-sH-UOy"/>
                         <outlet property="btnLoginPhoneNum" destination="Jqc-A8-jKR" id="lAv-6a-l6n"/>
                         <outlet property="btnLoginWithEmail" destination="vQa-GR-DWg" id="Odv-pp-Kwu"/>
+                        <outlet property="dummyView" destination="HFC-1M-uBj" id="QEl-6R-Hfo"/>
                         <outlet property="lblPrivacyDetails" destination="KGd-N9-Kuy" id="xLH-ig-gFZ"/>
                         <outlet property="lblTermsText" destination="Nka-u2-rel" id="XcE-cU-XX8"/>
                         <outlet property="lblTermsTextTop" destination="DMR-5c-qe2" id="Fpl-RM-JXG"/>
