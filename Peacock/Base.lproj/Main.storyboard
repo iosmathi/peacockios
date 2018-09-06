@@ -193,21 +193,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-Zj-V54">
                                                 <rect key="frame" x="40" y="15" width="295" height="26"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-e7-3g7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="258" height="26"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="26" id="le9-qC-317"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
-                                                        <state key="normal" title="We dont post anything on Facebook">
-                                                            <color key="titleColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="didTapFacebookDetailsAction:" destination="QlB-dn-0xz" eventType="touchUpInside" id="nmK-YS-nrl"/>
-                                                        </connections>
-                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-l8-uGQ">
                                                         <rect key="frame" x="260" y="0.0" width="31" height="26"/>
+                                                        <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="26" id="0VY-zf-d3c"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="ln3-Hq-Z6S">
@@ -219,14 +207,37 @@
                                                             <action selector="didTapFacebookDetailsAction:" destination="QlB-dn-0xz" eventType="touchUpInside" id="fEi-Sq-hxO"/>
                                                         </connections>
                                                     </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We dont post anything on Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-oC-0Pq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="258" height="26"/>
+                                                        <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
+                                                        <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-e7-3g7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="258" height="26"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="26" id="le9-qC-317"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didTapFacebookDetailsAction:" destination="QlB-dn-0xz" eventType="touchUpInside" id="nmK-YS-nrl"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="2sh-oC-0Pq" secondAttribute="bottom" id="2Kj-sH-Wx0"/>
                                                     <constraint firstAttribute="bottom" secondItem="IRc-e7-3g7" secondAttribute="bottom" id="8VM-29-TfW"/>
+                                                    <constraint firstItem="gmd-l8-uGQ" firstAttribute="leading" secondItem="2sh-oC-0Pq" secondAttribute="trailing" constant="2" id="Gtd-oE-zwb"/>
+                                                    <constraint firstItem="2sh-oC-0Pq" firstAttribute="top" secondItem="bcm-Zj-V54" secondAttribute="top" id="Hda-I6-Mzl"/>
                                                     <constraint firstAttribute="bottom" secondItem="gmd-l8-uGQ" secondAttribute="bottom" id="Keb-hX-LUs"/>
                                                     <constraint firstItem="gmd-l8-uGQ" firstAttribute="leading" secondItem="IRc-e7-3g7" secondAttribute="trailing" constant="2" id="Lx9-rW-ZsM"/>
                                                     <constraint firstItem="IRc-e7-3g7" firstAttribute="top" secondItem="bcm-Zj-V54" secondAttribute="top" id="MY3-GA-nFt"/>
                                                     <constraint firstItem="gmd-l8-uGQ" firstAttribute="top" secondItem="bcm-Zj-V54" secondAttribute="top" id="QRT-Pq-kgh"/>
+                                                    <constraint firstItem="2sh-oC-0Pq" firstAttribute="leading" secondItem="bcm-Zj-V54" secondAttribute="leading" id="Qvy-Ed-4fa"/>
                                                     <constraint firstAttribute="height" constant="26" id="Sur-r2-eeX"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="295" id="j6M-QQ-DBe"/>
                                                     <constraint firstItem="IRc-e7-3g7" firstAttribute="leading" secondItem="bcm-Zj-V54" secondAttribute="leading" id="mjs-Wj-cL3"/>
