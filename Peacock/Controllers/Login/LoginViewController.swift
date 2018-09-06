@@ -31,6 +31,8 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var viewBottomTop: NSLayoutConstraint!
     @IBOutlet weak var lblTermsTextTop: NSLayoutConstraint!
     
+    @IBOutlet weak var dummyView: UIView!
+    @IBOutlet weak var dummyViewTop: NSLayoutConstraint!
     //Global Values
     let arrContent = ["Instantly match with people that you've seen in real-life", "Show interest in them in real-time or save them to your favorites" , "You can only message people that have showed interest back" , "Set out your beacon to see other singles near you. You can't connect until you've seen them in real-life"]
     let arrImageCenter = ["01","02","03","04"]
@@ -75,9 +77,11 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
         } else if DEVICE_TYPE == iPhone5s {
             stackView.spacing = 10
             stackViewTop.constant = 0
+            dummyViewTop.constant = 0
             viewPagingHeight.constant = 250
             viewBottomHeight.constant = 50
-            viewBottomTop.constant = 15
+            viewBottomTop.constant = 0
+            dummyView.isHidden = true
             btnFacebookDetails.titleLabel?.font = UIFont(name: MYFONTS.BOOK, size: 13)
         } else if DEVICE_TYPE == iPhoneX {
             viewBottomTop.constant = 40
@@ -148,7 +152,6 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
     @IBAction func didTapBtnLoginWithEmailAction(_ sender: UIButton) {
          buttonSetup(sender_tag: sender.tag)
     }
-    
     @IBAction func didTapFacebookDetailsAction(_ sender: Any) {
         performSegue(withIdentifier: "details_view", sender: nil)
     }
@@ -159,6 +162,7 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrContent.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collCell = collectionView.dequeueReusableCell(withReuseIdentifier: "paging_cell", for: indexPath) as! PagingCollectionViewCell
         collCell.img.image = UIImage(named: arrImageCenter[indexPath.row])
@@ -170,6 +174,11 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
             collCell.imgWidth.constant = 110
             collCell.imgTop.constant = 65
             collCell.lblContent.font = UIFont(name: MYFONTS.BOOK, size: 17)
+        } else if DEVICE_TYPE == iPad {
+            collCell.imgHeight.constant = 200
+            collCell.imgWidth.constant = 200
+            collCell.imgTop.constant = 50
+            collCell.lblContent.font = UIFont(name: MYFONTS.BOOK, size: 25)
         }
         return collCell
     }
