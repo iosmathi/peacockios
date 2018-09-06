@@ -55,7 +55,9 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real time dating everywhere you go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-lK-lZk">
                                         <rect key="frame" x="45.5" y="192" width="226" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="pkQ-j0-upJ"/>
+                                            <constraint firstAttribute="height" constant="20" id="pkQ-j0-upJ">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                            </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="15"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>

@@ -21,6 +21,7 @@ class ExpandLoginViewController: BaseViewController {
     @IBOutlet weak var lblTermsText: UILabel!
     @IBOutlet weak var lblPrivacyDetails: UILabel!
     
+    @IBOutlet weak var dummyView: UIView!
     @IBOutlet weak var stackView: UIStackView!
     //For device change
     @IBOutlet weak var viewBottomHeight: NSLayoutConstraint!
@@ -77,6 +78,7 @@ class ExpandLoginViewController: BaseViewController {
             stackView.spacing = 10
             viewBottomHeight.constant = 210
             lblTermsTextTop.constant = 5
+        dummyView.isHidden = true
         } else if DEVICE_TYPE == iPhoneX {
             lblTermsTextTop.constant = 60
             viewBottomHeight.constant = 330

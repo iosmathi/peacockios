@@ -33,6 +33,9 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var dummyView: UIView!
     @IBOutlet weak var dummyViewTop: NSLayoutConstraint!
+    @IBOutlet weak var lblFacebookDetails: UILabel!
+    @IBOutlet weak var btnDownArrowWidth: NSLayoutConstraint!
+    
     //Global Values
     let arrContent = ["Instantly match with people that you've seen in real-life", "Show interest in them in real-time or save them to your favorites" , "You can only message people that have showed interest back" , "Set out your beacon to see other singles near you. You can't connect until you've seen them in real-life"]
     let arrImageCenter = ["01","02","03","04"]
@@ -82,7 +85,7 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
             viewBottomHeight.constant = 50
             viewBottomTop.constant = 0
             dummyView.isHidden = true
-            btnFacebookDetails.titleLabel?.font = UIFont(name: MYFONTS.BOOK, size: 13)
+            lblFacebookDetails.font = UIFont(name: MYFONTS.BOOK, size: 13)
         } else if DEVICE_TYPE == iPhoneX {
             viewBottomTop.constant = 40
             lblTermsTextTop.constant = 30
@@ -90,7 +93,7 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
             viewPagingHeight.constant = 400
             viewBottomHeight.constant = 100
             viewBottomTop.constant = 30
-            btnFacebookDetails.titleLabel?.font = UIFont(name: MYFONTS.BOOK, size: 22)
+           lblFacebookDetails.font = UIFont(name: MYFONTS.BOOK, size: 22)
         }
         
     }
