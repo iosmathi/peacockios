@@ -118,6 +118,28 @@ class BaseViewController: UIViewController {
         navigationItem.title = titleName
         navigationItem.titleView?.tintColor = .white
     }
+    
+    //BackButton with text
+    func addNavButtonWithText(leftButtonText: String, title: String){
+        if leftButtonText != "" {
+            //Left Button image
+            let leftButtonItem: UIButton = UIButton()
+            leftButtonItem.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+            leftButtonItem.setTitle(leftButtonText, for: .normal)
+            leftButtonItem.titleLabel?.font = UIFont(name: MYFONTS.BOOK, size: 17)
+            leftButtonItem.setTitleColor(UIColor(red:0.24, green:0.49, blue:1, alpha:1), for: .normal)
+            leftButtonItem.addTarget(self, action: #selector(didSelectLeftButton), for: .touchUpInside)
+            // Assign the Custom Button to Navigation Left UIBarButton
+            let leftButton = UIBarButtonItem(customView: leftButtonItem)
+            navigationItem.setLeftBarButton(leftButton, animated: true)
+            navigationItem.title = title
+            if DEVICE_TYPE == iPhone5s {
+                navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: UIFont(name: MYFONTS.BOOK, size: 19) as Any]
+            } else {
+                navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: UIFont(name: MYFONTS.BOOK, size: 22) as Any]
+            }
+        }
+    }
     //Code for Image with text for label
     func ImageWithLablTextLast(labelText : String , lblImage : UIImage)-> NSAttributedString {
         let attachment = NSTextAttachment()

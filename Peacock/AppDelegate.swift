@@ -119,6 +119,40 @@ extension UIView {
         get{ return UIColor(cgColor: self.layer.borderColor!) }
     }
 }
+
+//Navigation color extension
+@IBDesignable extension UINavigationController {
+    @IBInspectable var barTintColor: UIColor? {
+        set {
+            navigationBar.barTintColor = newValue
+        }
+        get {
+            guard  let color = navigationBar.barTintColor else { return nil }
+            return color
+        }
+    }
+    
+    @IBInspectable var tintColor: UIColor? {
+        set {
+            navigationBar.tintColor = newValue
+        }
+        get {
+            guard  let color = navigationBar.tintColor else { return nil }
+            return color
+        }
+    }
+    
+    @IBInspectable var titleColor: UIColor? {
+        set {
+            guard let color = newValue else { return }
+            navigationBar.titleTextAttributes = [kCTForegroundColorAttributeName: color] as [NSAttributedStringKey : Any]
+        }
+        get {
+            return navigationBar.titleTextAttributes?[.foregroundColor] as? UIColor
+        }
+    }
+}
+
 //TextviewPlaceholder
 extension UITextField{
     @IBInspectable var placeHolderColor: UIColor? {
