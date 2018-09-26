@@ -61,19 +61,23 @@ class BaseViewController: UIViewController {
         return gradientLayer
     }
     //MARK: Shadow to view
-    func setShadowToView(myView: UIView) {
+    func setShadowToView(myView: UIView, CornerRadius : Bool) {
         var shadowPath: UIBezierPath = UIBezierPath()
         shadowPath = UIBezierPath(roundedRect: myView.layer.bounds, cornerRadius: myView.layer.cornerRadius)
         //UIBezierPath(rect: CGRect(x: -shadowSize / 2,y: 0,width:viewBothWidth.constant ,height: myView.frame.size.height + shadowSize ))
         myView.layer.masksToBounds = false
         myView.layer.borderColor =  UIColor(red:0.67, green:0.67, blue:0.67, alpha:0.40).cgColor
         myView.layer.borderWidth = 1
-        myView.layer.cornerRadius = 7
+        if CornerRadius == true{
+            myView.layer.cornerRadius = 7
+        }
         myView.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.12).cgColor
-        myView.layer.shadowOffset =  CGSize(width: 0, height: 10)
-        myView.layer.shadowOpacity = 1
+        myView.layer.shadowOffset =  CGSize(width: 0, height: 3)
+        myView.layer.shadowOpacity = 0.90
         myView.layer.shadowPath = shadowPath.cgPath
-        myView.layer.shadowRadius = 10
+        if CornerRadius == true{
+            myView.layer.shadowRadius = 10
+        }
         myView.backgroundColor = .white
     }
     //MARK: Navigation Button add
@@ -223,6 +227,11 @@ class BaseViewController: UIViewController {
     func switchToViewController(identifier: String) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier) as UIViewController
             self.present(viewController, animated: false, completion: nil)
+    }
+    
+    func PeacockSWitchViewControllerWithAnotherStoryBoard(indentifier : String, StoryBoardName : String){
+        let viewController:UIViewController = UIStoryboard(name: StoryBoardName, bundle: nil).instantiateViewController(withIdentifier: indentifier) as UIViewController
+        self.present(viewController, animated: false, completion: nil)
     }
     
     

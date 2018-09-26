@@ -50,9 +50,9 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
     
     override func viewWillAppear(_ animated: Bool) {
         viewSetup()
-        setShadowToView(myView: viewLoginFacebook)
-        setShadowToView(myView: viewLoginWithEmail)
-        setShadowToView(myView: viewLoginPhoneNum)
+        setShadowToView(myView: viewLoginFacebook, CornerRadius: true)
+        setShadowToView(myView: viewLoginWithEmail, CornerRadius: true)
+        setShadowToView(myView: viewLoginPhoneNum, CornerRadius: true)
         textRangechanges()
         
         //Set up the collectionview layout
@@ -203,6 +203,10 @@ class LoginViewController: BaseViewController, UICollectionViewDelegate, UIColle
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func didTapLogin(_ sender: Any) {
+//       PeacockSWitchViewControllerWithAnotherstoryboard
+        PeacockSWitchViewControllerWithAnotherStoryBoard(indentifier : "Places" , StoryBoardName : "Place_Beacon")
+    }
+    
 }
 
