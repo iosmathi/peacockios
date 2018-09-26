@@ -41,7 +41,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfa-e8-IV8">
-                                <rect key="frame" x="31" y="479" width="314" height="20"/>
+                                <rect key="frame" x="31" y="479" width="314" height="26"/>
                                 <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -134,7 +134,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-8I-Iyc">
-                                                            <rect key="frame" x="35" y="193" width="306" height="18"/>
+                                                            <rect key="frame" x="35" y="193" width="306" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="20"/>
                                                             <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -395,7 +395,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By 'Login', you agree to our Terms and Services &amp; Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-FS-wIa">
-                                        <rect key="frame" x="51" y="210" width="273" height="29"/>
+                                        <rect key="frame" x="51" y="210" width="273" height="37.5"/>
                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="16"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -404,7 +404,7 @@
                                         </variation>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-QP-8MB">
-                                        <rect key="frame" x="0.0" y="258" width="375" height="16"/>
+                                        <rect key="frame" x="0.0" y="266.5" width="375" height="7.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -617,7 +617,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By 'Login', you agree to our Terms and Services &amp; Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-u2-rel">
-                                        <rect key="frame" x="51" y="281" width="273" height="29"/>
+                                        <rect key="frame" x="51" y="281" width="273" height="37.5"/>
                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="16"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -651,7 +651,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFC-1M-uBj">
-                                        <rect key="frame" x="39" y="318" width="302" height="49"/>
+                                        <rect key="frame" x="39" y="326.5" width="302" height="40.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -687,7 +687,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We take your privacy seriously" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsx-dG-OZ3">
-                                        <rect key="frame" x="47.5" y="30" width="280" height="25"/>
+                                        <rect key="frame" x="39" y="30" width="298.5" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="qio-ip-0Xl"/>
                                         </constraints>
@@ -699,7 +699,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We don't post anything on Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsx-4W-pqh">
-                                        <rect key="frame" x="72.5" y="84" width="230" height="25"/>
+                                        <rect key="frame" x="64.5" y="84" width="247.5" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="WqG-WJ-XQG"/>
                                         </constraints>
@@ -711,7 +711,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other users cannot contact you unless you have already accepted interest from them." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGd-N9-Kuy">
-                                        <rect key="frame" x="33" y="135" width="309" height="27"/>
+                                        <rect key="frame" x="33" y="135" width="309" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="309" id="GU9-7F-uSw">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="400"/>
@@ -791,13 +791,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6m-ce-roi">
-                                <rect key="frame" x="16" y="109" width="343" height="20"/>
+                                <rect key="frame" x="16" y="109" width="343" height="26"/>
                                 <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
                                 <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3v-GK-DTY">
-                                <rect key="frame" x="0.0" y="149" width="375" height="88"/>
+                                <rect key="frame" x="0.0" y="155" width="375" height="88"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-Mq-fXR">
                                         <rect key="frame" x="8" y="8" width="111" height="72"/>
@@ -840,20 +840,20 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-bi-moH">
-                                <rect key="frame" x="16" y="258" width="343" height="76.5"/>
+                                <rect key="frame" x="16" y="264" width="343" height="99.5"/>
                                 <string key="text">Tap Next to receive an SMS confirmation from Account Kit powered by Facebook. Peacock uses Facebook technology to help you Sign In, but you dont need a Facebook account. Message and data rates may apply.</string>
                                 <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
                                 <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how Facebook uses your info." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0a-1Q-WB8">
-                                <rect key="frame" x="16" y="350.5" width="343" height="15.5"/>
+                                <rect key="frame" x="16" y="379.5" width="343" height="20"/>
                                 <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
                                 <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peO-H1-Yzg">
-                                <rect key="frame" x="55" y="416" width="265" height="52"/>
+                                <rect key="frame" x="55" y="449.5" width="265" height="52"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmr-wn-SRW">
                                         <rect key="frame" x="0.0" y="-0.5" width="265" height="52"/>
@@ -931,7 +931,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have promo code?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrv-wh-82I">
-                                <rect key="frame" x="0.0" y="128" width="375" height="20"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="26"/>
                                 <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -940,7 +940,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use promo code  and get 10m extra distance for Beacon placement " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1z-f5-760">
-                                <rect key="frame" x="40" y="343" width="296" height="59.5"/>
+                                <rect key="frame" x="40" y="349" width="296" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="oY1-oU-lgW"/>
                                 </constraints>
@@ -952,7 +952,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKH-5D-6VL">
-                                <rect key="frame" x="40" y="218" width="296" height="55"/>
+                                <rect key="frame" x="40" y="224" width="296" height="55"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="7yZ-cx-40r">
@@ -975,7 +975,7 @@
                                 <rect key="frame" x="0.0" y="608" width="375" height="59"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-L3-aEd">
-                                        <rect key="frame" x="8" y="8" width="104" height="43"/>
+                                        <rect key="frame" x="8" y="8" width="115" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="nW3-xm-nvy"/>
                                         </constraints>
@@ -988,7 +988,7 @@
                                         </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xt-hV-mLN">
-                                        <rect key="frame" x="200" y="8" width="167" height="43"/>
+                                        <rect key="frame" x="188" y="8" width="179" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="dpp-PY-AZu"/>
                                         </constraints>
@@ -1101,13 +1101,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa4-9m-psl">
-                                <rect key="frame" x="16" y="109" width="343" height="20"/>
+                                <rect key="frame" x="16" y="109" width="343" height="26"/>
                                 <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
                                 <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wp-rd-ZIg">
-                                <rect key="frame" x="0.0" y="226" width="375" height="77"/>
+                                <rect key="frame" x="0.0" y="232" width="375" height="77"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="okN-Jp-GKr">
                                         <rect key="frame" x="18" y="16" width="339" height="44"/>
@@ -1192,13 +1192,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Continue to accept Facebook’s Terms, Data Policy, and Cookie use, and the Privacy Policy and  Terms of Service of Peacock" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYb-8v-eDD">
-                                <rect key="frame" x="16" y="478" width="343" height="46"/>
+                                <rect key="frame" x="16" y="484" width="343" height="59.5"/>
                                 <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
                                 <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcC-xG-4uu">
-                                <rect key="frame" x="55" y="332" width="265" height="52"/>
+                                <rect key="frame" x="55" y="338" width="265" height="52"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBo-vE-LX8">
                                         <rect key="frame" x="0.0" y="-0.5" width="265" height="52"/>
@@ -1219,7 +1219,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 123 456 7890" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0U-3I-ZdC">
-                                <rect key="frame" x="16" y="159" width="343" height="37"/>
+                                <rect key="frame" x="16" y="165" width="343" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="AAN-YW-BLC"/>
                                 </constraints>
@@ -1228,7 +1228,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I did't receive a code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFh-Lk-JNM">
-                                <rect key="frame" x="0.0" y="414" width="375" height="39"/>
+                                <rect key="frame" x="0.0" y="420" width="375" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="1m5-G8-3xe"/>
                                 </constraints>
@@ -1453,7 +1453,7 @@
                                         <rect key="frame" x="0.0" y="129.5" width="335" height="33"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8it-Vz-AFf">
-                                                <rect key="frame" x="156" y="8.5" width="23" height="14.5"/>
+                                                <rect key="frame" x="156" y="8" width="23" height="15.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14.5" id="Al2-6n-aHh"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="waF-fK-0lE"/>

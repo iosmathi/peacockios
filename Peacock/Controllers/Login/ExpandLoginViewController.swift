@@ -38,9 +38,9 @@ class ExpandLoginViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         viewSetup()
-        setShadowToView(myView: viewLoginFacebook)
-        setShadowToView(myView: viewLoginWithEmail)
-        setShadowToView(myView: viewLoginPhoneNum)
+        setShadowToView(myView: viewLoginFacebook, CornerRadius: true)
+        setShadowToView(myView: viewLoginWithEmail, CornerRadius: true)
+        setShadowToView(myView: viewLoginPhoneNum, CornerRadius: true)
         textRangechanges()
     }
 
