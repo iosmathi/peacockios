@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D401C53D215A13E1007CEA0F /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401C53C215A13E1007CEA0F /* GetStartedViewController.swift */; };
 		D4020C2F2140EE6700D06EBA /* profile_setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4020C2D2140EE6700D06EBA /* profile_setup.storyboard */; };
 		D4020C312141242200D06EBA /* GetPromoCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4020C302141242200D06EBA /* GetPromoCodeViewController.swift */; };
 		D4020C332141340000D06EBA /* LoginPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4020C322141340000D06EBA /* LoginPhoneNumberViewController.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D401C53C215A13E1007CEA0F /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		D4020C2E2140EE6700D06EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/profile_setup.storyboard; sourceTree = "<group>"; };
 		D4020C302141242200D06EBA /* GetPromoCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPromoCodeViewController.swift; sourceTree = "<group>"; };
 		D4020C322141340000D06EBA /* LoginPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPhoneNumberViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D401C53B215A13CB007CEA0F /* Create-new-account */ = {
+			isa = PBXGroup;
+			children = (
+				D401C53C215A13E1007CEA0F /* GetStartedViewController.swift */,
+			);
+			path = "Create-new-account";
+			sourceTree = "<group>";
+		};
 		D404E2312137B2FE009016E6 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 		D404E2742137CCD7009016E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D401C53B215A13CB007CEA0F /* Create-new-account */,
 				D47479BC2139515F00EF8B45 /* Login */,
 				D404E2752137CCD7009016E6 /* Walkthrough */,
 			);
@@ -401,6 +412,7 @@
 				D4FCD35F214272A400258D3B /* EnterCodeViewController.swift in Sources */,
 				D4299233213819B9001C92E6 /* ExtensionViewController.swift in Sources */,
 				D4020C332141340000D06EBA /* LoginPhoneNumberViewController.swift in Sources */,
+				D401C53D215A13E1007CEA0F /* GetStartedViewController.swift in Sources */,
 				D404E2462137B2FE009016E6 /* Peacock.xcdatamodeld in Sources */,
 				D4020C312141242200D06EBA /* GetPromoCodeViewController.swift in Sources */,
 				D404E23E2137B2FE009016E6 /* AppDelegate.swift in Sources */,

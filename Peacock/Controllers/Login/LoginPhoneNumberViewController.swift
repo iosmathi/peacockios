@@ -22,7 +22,8 @@ class LoginPhoneNumberViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         //Apply gradient and uiview shadow
         setShadowToView(myView: viewNext)
-        btnNext.layer.insertSublayer(applyGradientDynamic(frame: CGRect(x: btnNext.frame.origin.x, y: btnNext.frame.origin.y, width: viewNext.frame.size.width, height: viewNext.frame.size.height), color1:     UIColor(red:0.22, green:0.72, blue:0.95, alpha:1).cgColor, color2:     UIColor(red:0.52, green:0.24, blue:0.96, alpha:1).cgColor, start_point: CGPoint.zero, end_point: CGPoint(x: 1, y: 0), cornerRadius: 7, name: (btnNext.titleLabel?.text)!), at: 0)
+        btnNext.layer.insertSublayer(applyGradientBlueNPurple(frame: CGRect(x: btnNext.frame.origin.x, y: btnNext.frame.origin.y, width: viewNext.frame.size.width, height: viewNext.frame.size.height)), at: 0)
+        
         lblDetails.setLineSpacing(lineSpacing: 1.0, lineHeightMultiple: 1.0)
         lblDetails.textAlignment = .center
     }

@@ -49,6 +49,29 @@ class BaseViewController: UIViewController {
         return gradientLayer
     }
     
+    //Apply gradient for Blue and puple
+    func applyGradientBlueNPurple(frame: CGRect) ->  CAGradientLayer {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = frame
+        gradientLayer.colors = [UIColor(red:0.22, green:0.72, blue:0.95, alpha:1).cgColor,UIColor(red:0.52, green:0.24, blue:0.96, alpha:1).cgColor]//, color3, color4]
+        gradientLayer.startPoint = CGPoint.zero//CGPoint(x: 1.00, y: 0.00)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0) //CGPoint(x: 1.00, y: 1.00)
+        gradientLayer.locations = [0.0,0.90,0.95,1.0]// [0.0, 0.25, 0.75, 1.0]
+        gradientLayer.cornerRadius = 7
+        return gradientLayer
+    }
+    
+    func applyGradientBlueNBlack(frame: CGRect) ->  CAGradientLayer {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = frame
+        gradientLayer.colors = [UIColor(red:0.23, green:0.35, blue:0.6, alpha:1).cgColor, UIColor(red:0.18, green:0.48, blue:1, alpha:1).cgColor]//, color3, color4]
+        gradientLayer.startPoint = CGPoint(x: 0.01, y: 0)//CGPoint(x: 1.00, y: 0.00)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0) //CGPoint(x: 1.00, y: 1.00)
+        gradientLayer.locations = [0.0,0.90,0.95,1.0]// [0.0, 0.25, 0.75, 1.0]
+        gradientLayer.cornerRadius = 7
+        return gradientLayer
+    }
+    
     func applyGradientDynamic(frame: CGRect, color1 : CGColor, color2 :CGColor, start_point: CGPoint, end_point: CGPoint, cornerRadius: CGFloat, name: String) ->  CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = frame
